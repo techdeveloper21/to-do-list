@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List With Local Storage</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="new-task grid-row">
+        <div class="col-xl-9 col-lg-9 col-md-8 col-sm-8 col-xs-7 col-xxs-12">
+          <div class="form-groupe">
+            <input type="text" placeholder="Enter The Task Here..." class="task-input"/>
+            <span class="error-message">
+            
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-xs-5 col-xxs-12">
+          <div class="new-task-action add-action">
+            <button id="push" onclick="addTask()">Add</button>
+          </div>
+        </div>
+      </div>      
+      <div class="tasks">
+        
+      </div>
+    </div>
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+      <span id="toast-text"></span>
+    </div>
+    <!-- Script -->
+    <script src="./js/scriptWithLocalStorage.js"></script>
+  </body>
+</html>
