@@ -130,5 +130,6 @@ var tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tas
   
   window.onload = () => {
     showTasks();
+    console.log("test");
   };
   
